@@ -65,7 +65,8 @@ dateDay_to = None
 ## 句子匹配程序
 `quesion_sql.py`
 使用question_temp中定义的规则进行句子匹配，获取的槽值可以通过**question_temp.value_name**来访问，因此使用question_sql的同时，需要引入question_temp，这样做的好处是避免了槽值的多次传递
-使用时传入自定义的字典(用于word_tagging):
+
+在使用时传入自定义的字典(用于word_tagging):
 ```
 question_sql = question_sql.Question_sql(path)
 question_sql.get_sql(question)
